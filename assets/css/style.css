@@ -8,24 +8,24 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* background colour for the body of the page */
 body {
     background: whitesmoke;    
 }
-
+/* header */
 .header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 25px 50px;
-    background: transparent; /* #2657a6 */
+    padding: 20px 50px;
+    background: #2657a6; /* #2657a6 */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     z-index: 100;
 }
-
+/* my name/logo for the portfolio */
 .logo {
     font-size: 30px;
     color: #fff;
@@ -39,7 +39,7 @@ body {
     text-decoration: none;
     margin-left: 24px;
 }
-
+/* hover over for the navbar turns from white to gold */
 .navbar a:hover {
     color: goldenrod;
 }
@@ -59,7 +59,7 @@ body {
     text-align: center;
 
 }
-
+/* responsive layout*/
 @media screen and (max-width: 1024px) {
     body {
         background-color: #bb8588
