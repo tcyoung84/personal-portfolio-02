@@ -7,7 +7,7 @@
 }
 /* background colour for the body of the page */
 body {
-    background: whitesmoke;    
+    background: #004faa;    
 }
 /* header */
 .header {
@@ -15,8 +15,8 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 50px;
-    background: #0776f5; /* #2657a6 */
+    padding: 20px 5px;
+    background: rgb(68, 93, 175);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -35,24 +35,34 @@ body {
     color: #fff;
     text-decoration: none;
     margin-left: 24px;
+    transition: 0.3s;
 }
 /* hover over for the navbar turns from white to gold */
 .navbar a:hover {
     color: goldenrod;
 }
-/* banner picture separating header from body of the page */
-.banner {
-    width: 100%;
-    position: absolute;    
-}
-
-.aboutme {
+/* the content that will be in my Home section */
+.home {
     color: #fff;
     display: flex;
+    flex-direction: row;
+    height: 50vh;
+    align-items: flex-end;
+    padding: 0 7%;
 }
 
-.aboutme div {
-    text-align: center;
+.home-content {
+    text-align: left;
+    max-width: 300px;
+    margin-right: 50%;
+}
+
+.home-content h2 {
+    margin: 10px 0 10px;
+}
+
+.home-content p {
+    margin: 10px 0 10px;
 }
 
 #darkbanner {
@@ -73,6 +83,7 @@ body {
     align-content: center;
     align-items: center;
     justify-content: center;
+    height: 10vh;
 }
 
 .work {
@@ -95,12 +106,10 @@ body {
 }
 /* responsive layout*/
 @media screen and (max-width: 1024px) {
-    body {
-        background-color: #bb8588
-    }
-    .boxes {
+    
+    /* .boxes {
         width: 50%;
-    }
+    } */
 }
 
 @media screen and (max-width: 768px) {
