@@ -45,25 +45,55 @@ body {
 .home {
     color: #fff;
     display: flex;
-    flex-direction: row;
     height: 50vh;
     align-items: flex-end;
     padding: 0 7%;
+    justify-content: space-between;
 }
 
-.home-content {
+.home .home-content {
     text-align: left;
     max-width: 300px;
     margin-right: 50%;
+    flex-direction: row;
 }
 
-.home-content h2 {
+.home .home-content img {
+    width: 60%;
+    height: 60%;
+}
+
+.home .home-content h2 {
     margin: 10px 0 10px;
 }
 
 .home-content p {
     margin: 10px 0 10px;
 }
+
+.home .skills-text img {
+    width: 250%;
+    height: 100%;
+    border: #fff solid 10px;
+    margin: 20px 0 50px;
+    padding: 20%;
+    align-items: ;
+}
+/* .skills {
+    display: flex;
+    margin-left: 30%;
+    border: #fff;
+}
+
+.skills .skills-text h2 {
+    color: #fff;
+    padding: 15px;
+}
+
+.skills .skills-image img {
+    width: 50%;
+    height: 50%;
+} */
 
 #darkbanner {
     position: absolute;
