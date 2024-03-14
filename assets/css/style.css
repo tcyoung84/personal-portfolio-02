@@ -16,7 +16,7 @@ body {
     left: 0;
     width: 100%;
     padding: 20px 5px;
-    background: rgb(68, 93, 175);
+    background: transparent;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -52,10 +52,14 @@ body {
 }
 
 .home .home-content {
+    position: absolute;
     text-align: left;
     max-width: 300px;
     margin-right: 50%;
     flex-direction: row;
+    border: #fff solid 6px;
+    top: 85px;
+    
 }
 
 .home .home-content img {
@@ -65,19 +69,54 @@ body {
 
 .home .home-content h2 {
     margin: 10px 0 10px;
+    
 }
 
 .home-content p {
     margin: 10px 0 10px;
 }
 
+.home .skills-text {
+    transform: translateY(10%)
+}
+
+.home .skills-text h2 {
+    color: #fff;
+    transform: translateX(55%);
+
+}
+
 .home .skills-text img {
-    width: 250%;
+    position: relative;
+    width: 90%;
     height: 100%;
-    border: #fff solid 10px;
+    border: #fff solid 6px;
     margin: 20px 0 50px;
-    padding: 20%;
-    align-items: ;
+    padding: 10%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 50%;
+    max-width: 650px;
+    
+}
+
+.card {
+    flex: auto;
+    flex-direction: row;
+
+}
+
+.card .card-text h2 {
+    color: #fff;
+}
+
+.card .card-text .card-image {
+    position: absolute;
+}
+
+.card .card-text .card-image img {
+    width: 60%;
+    height: 60%;
 }
 /* .skills {
     display: flex;
@@ -114,10 +153,6 @@ body {
     align-items: center;
     justify-content: center;
     height: 10vh;
-}
-
-.work {
-
 }
 
 .boxes {
