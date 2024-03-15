@@ -11,13 +11,13 @@ body {
 }
 /* header */
 .header {
+    display: flex;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 20px 5px;
     background: transparent;
-    display: flex;
     justify-content: space-around;
     align-items: center;
     z-index: 100;
@@ -44,7 +44,6 @@ body {
 /* the content that will be in my Home section */
 .home {
     color: #fff;
-    display: flex;
     height: 50vh;
     align-items: flex-end;
     padding: 0 7%;
@@ -82,7 +81,7 @@ body {
 
 .home .skills-text h2 {
     color: #fff;
-    transform: translateX(55%);
+    transform: translateX(56%);
 
 }
 
@@ -101,8 +100,7 @@ body {
 }
 
 .card {
-    flex: auto;
-    flex-direction: row;
+    
 
 }
 
@@ -112,6 +110,7 @@ body {
 
 .card .card-text .card-image {
     position: absolute;
+    flex: 2 0 100%;
 }
 
 .card .card-text .card-image img {
@@ -170,21 +169,24 @@ body {
     text-align: center;
 }
 /* responsive layout*/
-@media screen and (max-width: 1024px) {
-    
-    /* .boxes {
-        width: 50%;
-    } */
-}
 
-@media screen and (max-width: 768px) {
-    body {
-        background-color: #4096b8
-    }
-}
-
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
     body {
         background-color: #45cc45
     }
 }
+
+@media screen and (min-width: 768px) {
+    body {
+        background-color: #4096b8
+    }
+}
+@media screen and (min-width: 1024px) {
+    body {
+        background-color: #813ad1
+    }
+   
+}
+
+
+
